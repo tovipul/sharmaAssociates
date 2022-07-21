@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +9,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  public languages = [
+    {
+      languageName: 'English',
+      languageCode: 'en'
+    },
+    {
+      languageName: 'Hindi',
+      languageCode: 'hi'
+    },
+    {
+      languageName: 'Punjabi',
+      languageCode: 'pa'
+    }
+  ];
+  public selectedLanguage = 'English';
+  @Output() passLanguage = new EventEmitter<any>();
+
+  constructor(translate: TranslateService) {
+    translate
+  }
 
   ngOnInit(): void {
+  }
+
+  selectLanguage(item) {
+    this.selectedLanguage = item.languageName;
+    this.passLanguage.emit(item);
   }
 
 }
