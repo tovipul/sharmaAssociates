@@ -56,7 +56,7 @@ export class AttorneyComponent implements OnInit {
     {
       "image":"",
       "employeeId":"",
-      "employeeName":"Arun Kumar",
+      "employeeName":"Arun Raghav",
       "designation":"Associate",
       "expertise":"",
       "linkedInUrl":"",
@@ -67,6 +67,15 @@ export class AttorneyComponent implements OnInit {
       "employeeId":"",
       "employeeName":"Basant Kumar",
       "designation":"Associate",
+      "expertise":"",
+      "linkedInUrl":"",
+      "twitterUrl":""
+    },
+    {
+      "image":"",
+      "employeeId":"",
+      "employeeName":"Ghanshyam Sharma",
+      "designation":"Regd. Clerk",
       "expertise":"",
       "linkedInUrl":"",
       "twitterUrl":""

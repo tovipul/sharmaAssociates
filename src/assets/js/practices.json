@@ -1,0 +1,51 @@
+{
+
+ "practices" : [
+    {
+      "practiceArea":"Service Matter",
+      "description":"",
+      "overview":""
+    },
+    {
+      "practiceArea":"Academic Matter",
+      "description":"",
+      "overview":""
+    },
+    {
+      "practiceArea":"Criminial Matter",
+      "description":"",
+      "overview":""
+    },
+    {
+      "practiceArea":"Family Law Matter",
+      "description":"",
+      "overview":""
+    },
+    {
+      "practiceArea":"Compensation Matter",
+      "description":"",
+      "overview":""
+    },
+    {
+      "practiceArea":"Oridnary Civil Matter",
+      "description":"",
+      "overview":""
+    },
+    {
+      "practiceArea":"Personal Law Matter",
+      "description":"",
+      "overview":""
+    },
+    {
+      "practiceArea":"Consumer Protection",
+      "description":"",
+      "overview":""
+    },
+    {
+      "practiceArea":"Land Laws & Agriculture Tenancies",
+      "description":"",
+      "overview":""
+    }
+  ]
+
+}

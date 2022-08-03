@@ -17,12 +17,12 @@
 <section class="practice-area practice-area-three pt-100">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" *ngFor="let item of practices">
                 <div class="practice-item">
                     <div class="practice-icon">
                         <i class="flaticon-law"></i>
                     </div>
-                    <h3>Civil Law</h3>
+                    <h3>{{item.practiceArea}}</h3>
                     <p>Our attorneys are highly trained and skilled in the Civil Law sector  to provide the top service</p>
                     <a routerLink="/practice-details">Read More</a>
                     <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
@@ -30,7 +30,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 col-lg-4">
+            <!-- <div class="col-sm-6 col-lg-4">
                 <div class="practice-item">
                     <div class="practice-icon">
                         <i class="flaticon-family"></i>
@@ -93,7 +93,7 @@
                     <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
                     <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

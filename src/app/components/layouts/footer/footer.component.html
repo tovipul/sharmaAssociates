@@ -19,9 +19,9 @@
                         <a routerLink="/"><img src="assets/img/logo.png" alt="Logo"></a>
                         <p>Our Squad of Attorneys are always here to provide you the best and efficient service. Still, if you want to know more about us and our firm, you can connect us through social media.</p>
                         <ul>
-                            <li><a href="https://www.youtube.com/" target="_blank"><i class="icofont-youtube-play"></i></a></li>
-                            <li><a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a></li>
+                            <!-- <li><a href="https://www.youtube.com/" target="_blank"><i class="icofont-youtube-play"></i></a></li> -->
+                            <!-- <li><a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a></li> -->
+                            <!-- <li><a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a></li> -->
                             <li><a href="https://www.twitter.com/" target="_blank"><i class="icofont-twitter"></i></a></li>
                         </ul>
                     </div>
@@ -34,11 +34,7 @@
                         <h3>Services</h3>
 
                         <ul>
-                            <li><a routerLink="/practice-details"><i class="icofont-simple-right"></i> Family Law</a></li>
-                            <li><a routerLink="/practice-details"><i class="icofont-simple-right"></i> Education Law</a></li>
-                            <li><a routerLink="/practice-details"><i class="icofont-simple-right"></i> Civil Law</a></li>
-                            <li><a routerLink="/practice-details"><i class="icofont-simple-right"></i> Criminal Law</a></li>
-                            <li><a routerLink="/practice-details"><i class="icofont-simple-right"></i> Business Law</a></li>
+                            <li *ngFor="let item of practices"><a routerLink="/practice-details"><i class="icofont-simple-right"></i> {{item.practiceArea}}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -52,9 +48,12 @@
                         <ul>
                             <li><a routerLink="/"><i class="icofont-simple-right"></i> Home</a></li>
                             <li><a routerLink="about"><i class="icofont-simple-right"></i> About Us</a></li>
-                            <li><a routerLink="blog"><i class="icofont-simple-right"></i> Blog</a></li>
-                            <li><a routerLink="attorney"><i class="icofont-simple-right"></i> Team</a></li>
-                            <li><a routerLink="testimonial"><i class="icofont-simple-right"></i> Testimonial</a></li>
+                            <!-- <li><a routerLink="blog"><i class="icofont-simple-right"></i> Blog</a></li> -->
+                            <li><a routerLink="attorney"><i class="icofont-simple-right"></i>Our Team</a></li>
+                            <li><a routerLink="practice"><i class="icofont-simple-right"></i>Practice</a></li>
+                            <li><a routerLink="gallery"><i class="icofont-simple-right"></i>Gallery</a></li>
+                            <li><a routerLink="contact"><i class="icofont-simple-right"></i>Contact Us</a></li>
+                            <!-- <li><a routerLink="testimonial"><i class="icofont-simple-right"></i> Testimonial</a></li> -->
                         </ul>
                     </div>
                 </div>
