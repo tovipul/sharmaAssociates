@@ -12,4 +12,8 @@ export class AppService {
   getPracticesAreas():Observable<any>{
    return this.http.get('./assets/js/practices.json');
   }
+
+  getAttorneysDetails():Observable<any>{
+    return this.http.get('./assets/js/attorneys-details.json');
+   }
 }

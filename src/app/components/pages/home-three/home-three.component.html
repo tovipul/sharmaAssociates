@@ -23,98 +23,9 @@
                 </div>
             </div>
         </div>
-
-        <!-- <div class="slider-item slider-bg-one">
-            <div class="d-table">
-                <div class="d-table-cell">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <div class="slider-text">
-                                    <h1>Our attorney’s main goal is to challenge  for  your privileges</h1>
-                                    <p>FIGHTING FOR YOUR DREAM</p>
-                                    <a routerLink="/">FREE CONSULTATION <i class="icofont-arrow-right"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-7">
-                                <div class="slider-shape">
-                                    <img class="s-s-two" src="assets/img/home-two/home-slider/3.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="slider-item slider-bg-one">
-            <div class="d-table">
-                <div class="d-table-cell">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <div class="slider-text">
-                                    <h1>Our Attorney’s are Always Prepared to Oppose For You</h1>
-                                    <p>FIGHTING FOR YOUR DREAM</p>
-                                    <a routerLink="/">FREE CONSULTATION <i class="icofont-arrow-right"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-7">
-                                <div class="slider-shape">
-                                    <img class="s-s-three" src="assets/img/home-two/home-slider/4.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 </div>
 
-<!-- <div class="slider-bottom-area">
-    <div class="container">
-        <div class="row slider-bottom-wrap">
-            <div class="col-sm-6 col-lg-4">
-                <div class="banner-bottom">
-                    <ul>
-                        <li><i class="flaticon-leader"></i></li>
-                        <li>
-                            <span>100% Legal</span>
-                            <p>Govt Approved</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4">
-                <div class="banner-bottom">
-                    <ul>
-                        <li><i class="flaticon-auction"></i></li>
-                        <li>
-                            <span>Trusted</span>
-                            <p>99% Case Won</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-sm-6 offset-sm-3 offset-lg-0 col-lg-4">
-                <div class="banner-bottom">
-                    <ul>
-                        <li><i class="flaticon-support"></i></li>
-                        <li>
-                            <span>Support</span>
-                            <p>Full Time Support</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <div class="help-area help-area-three pb-70">
     <div class="container-fluid">
@@ -300,53 +211,6 @@
     </div>
 </section>
 
-<!-- <section class="portfolio-area ptb-100">
-    <div class="container">
-        <div class="section-title">
-            <span>PORTFOLIO</span>
-            <h2>Check Out Our Popular Case Studies.</h2>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-6 col-lg-4">
-                <div class="portfolio-item">
-                    <img src="assets/img/home-one/portfolio/1.jpg" alt="Portfolio">
-                    <div class="portfolio-inner">
-                        <span>Crime</span>
-                        <h3><a routerLink="case-study-details/">Critical Murder Case</a></h3>
-                        <p>15 Feb 2021</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4">
-                <div class="portfolio-item">
-                    <img src="assets/img/home-one/portfolio/2.jpg" alt="Portfolio">
-                    <div class="portfolio-inner">
-                        <span>Rights</span>
-                        <h3><a routerLink="case-study-details/">Children Rights</a></h3>
-                        <p>16 Feb 2021</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 offset-sm-3 offset-lg-0 col-lg-4">
-                <div class="portfolio-item">
-                    <img src="assets/img/home-one/portfolio/3.jpg" alt="Portfolio">
-                    <div class="portfolio-inner">
-                        <span>Finance</span>
-                        <h3><a routerLink="case-study-details/">Money Loundering</a></h3>
-                        <p>17 Feb 2021</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center">
-            <a class="cmn-btn" routerLink="/case-study">See More</a>
-        </div>
-    </div>
-</section> -->
 
 <section class="team-area" style="margin-top: 10px;">
     <div class="container">
@@ -356,73 +220,21 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-sm-6 col-lg-3" *ngFor="let item of attorneys">
                 <div class="team-item">
                     <img src="assets/img/home-one/team/1.jpg" alt="Team">
                     
                     <div class="team-inner">
                         <ul>
-                            <li><a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a></li>
                             <li><a href="https://www.twitter.com/" target="_blank"><i class="icofont-twitter"></i></a></li>
                             <li><a href="https://www.linkedin.com/" target="_blank"><i class="icofont-linkedin"></i></a></li>
                         </ul>
-                        <h3><a routerLink="/attorney-details">Attor. Jerry Hudson</a></h3>
-                        <span>Family Consultant</span>
+                        <h3><a routerLink="/attorney-details">{{item.employeeName}}</a></h3>
+                        <span>{{item.designation}}</span>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-6 col-lg-3">
-                <div class="team-item">
-                    <img src="assets/img/home-one/team/2.jpg" alt="Team">
-                    
-                    <div class="team-inner">
-                        <ul>
-                            <li><a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a></li>
-                            <li><a href="https://www.twitter.com/" target="_blank"><i class="icofont-twitter"></i></a></li>
-                            <li><a href="https://www.linkedin.com/" target="_blank"><i class="icofont-linkedin"></i></a></li>
-                        </ul>
-                        <h3><a routerLink="/attorney-details">Attor. Juho Hudson</a></h3>
-                        <span>Criminal Consultant</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="team-item">
-                    <img src="assets/img/home-one/team/3.jpg" alt="Team">
-                    
-                    <div class="team-inner">
-                        <ul>
-                            <li><a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a></li>
-                            <li><a href="https://www.twitter.com/" target="_blank"><i class="icofont-twitter"></i></a></li>
-                            <li><a href="https://www.linkedin.com/" target="_blank"><i class="icofont-linkedin"></i></a></li>
-                        </ul>
-                        <h3><a routerLink="/attorney-details">Attor. Sarah Se</a></h3>
-                        <span>Divorce Consultant</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="team-item">
-                    <img src="assets/img/home-one/team/4.jpg" alt="Team">
-
-                    <div class="team-inner">
-                        <ul>
-                            <li><a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a></li>
-                            <li><a href="https://www.twitter.com/" target="_blank"><i class="icofont-twitter"></i></a></li>
-                            <li><a href="https://www.linkedin.com/" target="_blank"><i class="icofont-linkedin"></i></a></li>
-                        </ul>
-                        <h3><a routerLink="/attorney-details">Attor. Aikin Ward</a></h3>
-                        <span>Business Consultant</span>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
