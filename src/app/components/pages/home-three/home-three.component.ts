@@ -9,6 +9,7 @@ import { AppService } from 'src/app/app.service';
 })
 export class HomeThreeComponent implements OnInit {
   public attorneys = [];
+  public practiceAreas = [];
 
   constructor(private appService: AppService) { }
 
@@ -19,6 +20,12 @@ export class HomeThreeComponent implements OnInit {
   getAttorneys() {
     this.appService.getAttorneysDetails().subscribe((data) => {
       this.attorneys = data['attorneys']
+    });
+  }
+
+  getPracticeAreas() {
+    this.appService.getPracticesAreas().subscribe((data) => {
+      this.practiceAreas = data['practices'];
     });
   }
 
