@@ -15,6 +15,7 @@ export class HomeThreeComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAttorneys();
+    this.getPracticeAreas();
   }
 
   getAttorneys() {
