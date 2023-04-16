@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AppService } from 'src/app/app.service';
 
 @Component({
@@ -8,84 +9,9 @@ import { AppService } from 'src/app/app.service';
 })
 export class AttorneyComponent implements OnInit {
 
-  // public attorneys =[
-  //   {
-  //     "image":"",
-  //     "employeeId":"",
-  //     "employeeName":"Krishna Sharma",
-  //     "designation":"Partner",
-  //     "expertise":"",
-  //     "linkedInUrl":"",
-  //     "twitterUrl":""
-  //   },
-  //   {
-  //     "image":"",
-  //     "employeeId":"",
-  //     "employeeName":"Seeta Ram Sharma",
-  //     "designation":"Founder",
-  //     "expertise":"",
-  //     "linkedInUrl":"",
-  //     "twitterUrl":""
-  //   },
-  //   {
-  //     "image":"",
-  //     "employeeId":"",
-  //     "employeeName":"Aditi Sharma",
-  //     "designation":"Partner",
-  //     "expertise":"",
-  //     "linkedInUrl":"",
-  //     "twitterUrl":""
-  //   },
-  //   {
-  //     "image":"",
-  //     "employeeId":"",
-  //     "employeeName":"Himanshu Sharma",
-  //     "designation":"Partner",
-  //     "expertise":"",
-  //     "linkedInUrl":"",
-  //     "twitterUrl":""
-  //   },
-  //   {
-  //     "image":"",
-  //     "employeeId":"",
-  //     "employeeName":"Vinay Kumar",
-  //     "designation":"Sr. Associate",
-  //     "expertise":"",
-  //     "linkedInUrl":"",
-  //     "twitterUrl":""
-  //   },
-  //   {
-  //     "image":"",
-  //     "employeeId":"",
-  //     "employeeName":"Arun Raghav",
-  //     "designation":"Associate",
-  //     "expertise":"",
-  //     "linkedInUrl":"",
-  //     "twitterUrl":""
-  //   },
-  //   {
-  //     "image":"",
-  //     "employeeId":"",
-  //     "employeeName":"Basant Kumar",
-  //     "designation":"Associate",
-  //     "expertise":"",
-  //     "linkedInUrl":"",
-  //     "twitterUrl":""
-  //   },
-  //   {
-  //     "image":"",
-  //     "employeeId":"",
-  //     "employeeName":"Ghanshyam Sharma",
-  //     "designation":"Regd. Clerk",
-  //     "expertise":"",
-  //     "linkedInUrl":"",
-  //     "twitterUrl":""
-  //   }
-
-  // ];
-
   public attorneys = [];
-  constructor(private appService: AppService) { }
+  constructor(private appService: AppService,
+    private router:Router) { }
 
   ngOnInit(): void {
     this.getAttroneys();
@@ -95,6 +21,10 @@ export class AttorneyComponent implements OnInit {
     this.appService.getAttorneysDetails().subscribe((data) => {
       this.attorneys = data['attorneys'];
     });
+  }
+
+  goToDetails(item){
+this.router.navigate(['/attorney-details',item.employeeName]);
   }
 
 }

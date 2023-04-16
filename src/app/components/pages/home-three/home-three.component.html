@@ -15,7 +15,7 @@
 
                             <div class="col-lg-7">
                                 <div class="slider-shape">
-                                    <img class="s-s-one" src="assets/img/home-two/home-slider/team.png" alt="">
+                                    <img class="s-s-one" src="assets\img\attorney-details/office10.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -39,8 +39,8 @@
             <div class="col-lg-6">
                 <div class="help-item">
                     <div class="help-right">
-                        <h2>We Provide Professional Attorneys to Assist You</h2>
-                        <p>We are qualified for the success of our client & as a professional law firm. So these professional attorneys are still here at your side with kindness, integrity, and loyalty to help with the worst moments of your life.</p>
+                        <h2>We Provide Professional Advocates to Assist You</h2>
+                        <p>We are qualified for the success of our client & as a professional law firm. So these professional advocates are still here at your side with kindness, integrity, and loyalty to help with the worst moments of your life.</p>
 
                         <div class="help-inner-left">
                             <ul>
@@ -56,11 +56,11 @@
                             </ul>
                         </div>
 
-                        <div class="help-signature">
+                        <!-- <div class="help-signature">
                             <img src="assets/img/home-one/4.png" alt="Signature">
                         </div>
 
-                        <a class="cmn-btn" routerLink="/practice">Learn More</a>
+                        <a class="cmn-btn" routerLink="/practice">Learn More</a> -->
                     </div>
                 </div>
             </div>
@@ -86,8 +86,8 @@
                         <i class="flaticon-law"></i>
                     </div>
                     <h3>{{item.practiceArea}}</h3>
-                    <p>Our attorneys are highly talented  and able to offer the highest services in the civil law field.</p>
-                    <a routerLink="/practice-details">Read More</a>
+                    <p>{{item.overview}}</p>
+                    <a (click)="goToDetails(item)">Read More</a>
                     <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
                     <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
                 </div>
@@ -113,7 +113,7 @@
                                 <img src="assets/img/home-one/11.png" alt="Shape">
                             </div>
                             <h3>Experience</h3>
-                            <p>Team of Lyzo are exceptionally skilled, realize their client’s condition, help them to achieve their motive.</p>
+                            <p>Team of Krishna & Co. are exceptionally skilled, realize their client’s condition, help them to achieve their motive.</p>
                         </li>
 
                         <li class="wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
@@ -122,7 +122,7 @@
                                 <img src="assets/img/home-one/11.png" alt="Shape">
                             </div>
                             <h3>Skilled Attorney</h3>
-                            <p>Our attorneys are creative and knowledgeable and support clients by finding numerous solutions to win.</p>
+                            <p>Our advocates are creative and knowledgeable and support clients by finding numerous solutions to win.</p>
                         </li>
 
                         <li class="wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
@@ -139,7 +139,7 @@
 
             <div class="col-lg-6">
                 <div class="expertise-image">
-                    <img src="assets/img/home-one/10.png" alt="Expertise">
+                    <img src="assets/img/attorney-details/IMG-20230414-WA0053.jpg" alt="Expertise">
                 </div>
             </div>
         </div>
@@ -151,13 +151,13 @@
     <div class="container">
         <div class="section-title">
             <span>TEAM MEMBER</span>
-            <h2>Meet Our Expert Attorneys</h2>
+            <h2>Meet Our Expert Advocates</h2>
         </div>
 
         <div class="row">
             <div class="col-sm-6 col-lg-3" *ngFor="let item of attorneys">
                 <div class="team-item">
-                    <img src="assets/img/home-one/team/1.jpg" alt="Team">
+                    <img src="{{item.image}}" alt="Team" height="400px">
                     
                     <div class="team-inner">
                         <ul>

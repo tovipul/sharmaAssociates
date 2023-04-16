@@ -16,14 +16,17 @@
             <div class="col-sm-6 col-lg-4">
                 <div class="footer-item">
                     <div class="footer-logo">
-                        <a routerLink="/"><img src="assets/img/logo.png" alt="Logo"></a>
-                        <p>Our Squad of Attorneys are always here to provide you the best and efficient service. Still, if you want to know more about us and our firm, you can connect us through social media.</p>
-                        <ul>
-                            <!-- <li><a href="https://www.youtube.com/" target="_blank"><i class="icofont-youtube-play"></i></a></li> -->
-                            <!-- <li><a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a></li> -->
-                            <!-- <li><a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a></li> -->
-                            <li><a href="https://www.twitter.com/" target="_blank"><i class="icofont-twitter"></i></a></li>
-                        </ul>
+                        <a routerLink="/"> Krishna & Co.</a>
+                        <!-- <img src="assets/img/logo.jpeg" alt="Logo" style="height: 50px;width: 150px;"> -->
+                       
+                        <p>Our Squad of Advocates are always here to provide you the best and efficient service. Still,
+                            if you want to know more about us and our firm, you can connect us through social media.</p>
+                        <!-- <ul> -->
+                        <!-- <li><a href="https://www.youtube.com/" target="_blank"><i class="icofont-youtube-play"></i></a></li> -->
+                        <!-- <li><a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a></li> -->
+                        <!-- <li><a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a></li> -->
+                        <!-- <li><a href="https://www.twitter.com/" target="_blank"><i class="icofont-twitter"></i></a></li> -->
+                        <!-- </ul> -->
                     </div>
                 </div>
             </div>
@@ -34,7 +37,8 @@
                         <h3>Services</h3>
 
                         <ul>
-                            <li *ngFor="let item of practices"><a routerLink="/practice-details"><i class="icofont-simple-right"></i> {{item.practiceArea}}</a></li>
+                            <li *ngFor="let item of practices"><a  (click)="goToDetails(item)"><i
+                                        class="icofont-simple-right"></i> {{item.practiceArea}}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -65,9 +69,17 @@
                         <h3>Find Us</h3>
 
                         <ul>
-                            <li><i class="icofont-location-pin"></i> 28/A Street, New York City</li>
-                            <li><i class="icofont-ui-call"></i><a href="tel:+02140210012"> +0214 021 0012</a></li>
-                            <li><i class="icofont-at"></i> <a href="mailto:hello@lufz.com"> hello@lufz.com</a></li>
+                            <li><i class="icofont-location-pin"></i>Ch No. 141, New Lawyer's Chamber,<br>M.C Setalvad
+                                Block, Supreme Court</li>
+                            <li><i class="icofont-location-pin"></i>Office : 533, 1<sup>st</sup> Floor, Sector 22A,
+                                Gurugram-122017</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <li><i class="icofont-ui-call"></i><a href="tel:911244303228">01244303228</a></li>
+                            <li><i class="icofont-ui-call"></i><a href="tel:9999256022">9999256022</a></li>
+                            <li><i class="icofont-at"></i><a
+                                    href="mailto:himanshu_adv10@yahoo.com">himanshu_adv10@yahoo.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -78,7 +90,8 @@
             <div class="row">
                 <div class="col-sm-7 col-lg-6">
                     <div class="copyright-item">
-                        <p>© Lufz is Proudly Owned by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
+                        <p>Powered By : <a>Tech Desk India Pvt Ltd.</a>
+                        </p>
                     </div>
                 </div>
 

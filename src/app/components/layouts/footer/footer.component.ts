@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AppService } from 'src/app/app.service';
 
 @Component({
@@ -10,7 +11,8 @@ export class FooterComponent implements OnInit {
 
   public practices = [];
 
-  constructor(private appService: AppService) { }
+  constructor(private appService: AppService,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.getPractices();
@@ -20,6 +22,10 @@ export class FooterComponent implements OnInit {
     this.appService.getPracticesAreas().subscribe((data) => {
       this.practices = data['practices'];
     });
+  }
+
+  goToDetails(item) {
+    this.router.navigate(['/practice-details', item.practiceArea]);
   }
 
 }

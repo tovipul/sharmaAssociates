@@ -1,76 +1,114 @@
 {
 "attorneys" :[
     {
-      "image":"",
+      "image":"assets/img/attorney-details/krishna.jpg",
       "employeeId":"",
       "employeeName":"Krishna Sharma",
-      "designation":"Partner",
+      "designation":"Patron",
       "expertise":"",
       "linkedInUrl":"",
-      "twitterUrl":""
+      "twitterUrl":"",
+      "email":""
     },
     {
-      "image":"",
+      "image":"assets/img/attorney-details/seetaramg.jpg",
       "employeeId":"",
       "employeeName":"Seeta Ram Sharma",
       "designation":"Founder",
       "expertise":"",
       "linkedInUrl":"",
-      "twitterUrl":""
+      "twitterUrl":"",
+      "email":""
     },
     {
-      "image":"",
+      "image":"assets/img/attorney-details/aditi.jpg",
       "employeeId":"",
       "employeeName":"Aditi Sharma",
       "designation":"Partner",
       "expertise":"",
       "linkedInUrl":"",
-      "twitterUrl":""
+      "twitterUrl":"",
+      "email":""
     },
     {
-      "image":"",
+      "image":"assets/img/attorney-details/himanshu.jpg",
       "employeeId":"",
       "employeeName":"Himanshu Sharma",
       "designation":"Partner",
       "expertise":"",
       "linkedInUrl":"",
-      "twitterUrl":""
+      "twitterUrl":"",
+      "email":""
     },
     {
-      "image":"",
+      "image":"assets/img/attorney-details/vinay.jpg",
       "employeeId":"",
       "employeeName":"Vinay Kumar",
       "designation":"Sr. Associate",
       "expertise":"",
       "linkedInUrl":"",
-      "twitterUrl":""
+      "twitterUrl":"",
+      "email":""
     },
     {
-      "image":"",
+      "image":"assets/img/attorney-details/nitin.jpg",
       "employeeId":"",
-      "employeeName":"Arun Raghav",
+      "employeeName":"Nitin Sharma",
       "designation":"Associate",
       "expertise":"",
       "linkedInUrl":"",
-      "twitterUrl":""
+      "twitterUrl":"",
+      "email":""
     },
     {
-      "image":"",
+      "image":"assets/img/attorney-details/Prateek.jpg",
+      "employeeId":"",
+      "employeeName":"Prateek Bajaj",
+      "designation":"Associate",
+      "expertise":"",
+      "linkedInUrl":"",
+      "twitterUrl":"",
+      "email":""
+    },
+    {
+      "image":"assets/img/attorney-details/Lokesh.jpg",
+      "employeeId":"",
+      "employeeName":"Lokesh Solanki",
+      "designation":"Associate",
+      "expertise":"",
+      "linkedInUrl":"",
+      "twitterUrl":"",
+      "email":""
+    },
+    {
+      "image":"assets/img/attorney-details/Basant.jpg",
       "employeeId":"",
       "employeeName":"Basant Kumar",
       "designation":"Associate",
       "expertise":"",
       "linkedInUrl":"",
-      "twitterUrl":""
+      "twitterUrl":"",
+      "email":""
     },
     {
-      "image":"",
+      "image":"assets/img/attorney-details/arun.jpg",
+      "employeeId":"",
+      "employeeName":"Arun Kr. Raghav",
+      "designation":"Associate",
+      "expertise":"",
+      "linkedInUrl":"",
+      "twitterUrl":"",
+      "email":"raghav_adv@outlook.com"
+    },
+    {
+      "image":"assets/img/attorney-details/Ghanshyam.jpg",
       "employeeId":"",
       "employeeName":"Ghanshyam Sharma",
       "designation":"Regd. Clerk",
       "expertise":"",
       "linkedInUrl":"",
-      "twitterUrl":""
+      "twitterUrl":"",
+      "email":""
     }
 
   ]

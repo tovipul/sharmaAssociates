@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { AppService } from 'src/app/app.service';
 
@@ -11,7 +12,8 @@ export class HomeThreeComponent implements OnInit {
   public attorneys = [];
   public practiceAreas = [];
 
-  constructor(private appService: AppService) { }
+  constructor(private appService: AppService,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.getAttorneys();
@@ -28,6 +30,10 @@ export class HomeThreeComponent implements OnInit {
     this.appService.getPracticesAreas().subscribe((data) => {
       this.practiceAreas = data['practices'];
     });
+  }
+
+  goToDetails(item) {
+    this.router.navigate(['/practice-details', item.practiceArea]);
   }
 
 }
