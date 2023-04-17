@@ -1,4 +1,55 @@
 <app-preloader></app-preloader>
 <app-navbar (passLanguage)="selectedLanguage($event)"></app-navbar>
-    <router-outlet></router-outlet>
+<router-outlet></router-outlet>
 <app-footer></app-footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel"><b>Disclaimer</b></h5>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body">
+                <p style="font-size: 13px;text-align: justify;">
+                    As per the rules of the Bar Council of India, we are not permitted to solicit work and advertise.
+                    This website is no mode of advertisement, personal communication, solicitation, invitation or
+                    inducement of any sort whatsoever from us to solicit any work from any individual or any other
+                    entity. This website has been created with a view to enabling the users to gain more information
+                    about our organization for the enhancement of their own knowledge and use.
+                </p>
+
+                    <p style="font-size: 13px;text-align: justify;">
+                    
+                    The information about us
+                    is provided to the user on his/her specific request and materials downloaded form this website is
+                    completely at the user’s volition and any transmission, receipt, or use of this side would not
+                    create any lawyer-client relationship of any sort. The information provided of this website is
+                    solely for information/educational & demonstration purposes and the same should not be interpreted
+                    as an exercise solicitating any kind of work, neither the same be construed as an advertisement
+                    exercise.
+                </p>
+                <p style="font-size: 13px;text-align: justify;">
+                    We are not liable for any consequence of any action taken by the user relying on
+                    material/information provided on the website. In case where the user has any legal issues, he /she
+                    in all cases must seek independent legal advice.
+                </p>
+                <p style="font-size: 13px;text-align: justify;">
+                    The entire material content published on this website is the intellectual property of Krishna & Co.
+                    Any unauthorized reproduction of the content of this website may entail
+                    appropriate legal action as per the relevant statue.
+                    The Team, Krishna & Co.
+                </p>
+
+
+            </div>
+            <div class="modal-footer" style="display: flex;justify-content: space-between;">
+                <button type="button" class="btn btn-secondary" (click)="reload()">DISAGREE</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">AGREE</button>
+            </div>
+        </div>
+    </div>
+</div>

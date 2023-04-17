@@ -4,6 +4,7 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
 import { filter } from 'rxjs/operators';
 import { TranslateService } from '@ngx-translate/core';
 declare let $: any;
+declare let window: any;
 
 @Component({
     selector: 'app-root',
@@ -19,8 +20,9 @@ declare let $: any;
 export class AppComponent implements OnInit {
     location: any;
     routerSubscription: any;
+    formModal: any;
 
-    constructor(private router: Router,public translate: TranslateService) {
+    constructor(private router: Router, public translate: TranslateService) {
         // this language will be used as a fallback when a translation isn't found in the current language
         translate.setDefaultLang('en');
         // the lang to use, if the lang isn't available, it will use the current loader to get them
@@ -29,6 +31,11 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
         this.recallJsFuntions();
+
+        this.formModal = new window.bootstrap.Modal(
+            document.getElementById('staticBackdrop')
+          );
+          this.formModal.show();
     }
 
     recallJsFuntions() {
@@ -55,5 +62,9 @@ export class AppComponent implements OnInit {
         console.log('eeeeeeeeeeeeeeeeee :::::::::: ', event);
         this.translate.setDefaultLang(event.languageCode);
         this.translate.use(event.languageCode);
+    }
+
+    reload(){
+        window.location.reload();
     }
 }
