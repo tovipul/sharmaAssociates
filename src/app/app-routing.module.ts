@@ -22,7 +22,7 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import { GalleryComponent } from './components/pages/gallery/gallery.component';
 
 const routes: Routes = [
-    {path: '', component: HomeThreeComponent},
+    {path: '', redirectTo:'/home-three',pathMatch:'full'},
     {path: 'home-two', component: HomeTwoComponent},
     {path: 'home-three', component: HomeThreeComponent},
     {path: 'about', component: AboutComponent},
@@ -49,7 +49,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+    imports: [RouterModule.forRoot(routes,{useHash:true})],
     exports: [RouterModule]
 })
 export class AppRoutingModule { }

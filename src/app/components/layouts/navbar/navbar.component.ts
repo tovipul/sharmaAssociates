@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-
+declare let $: any;
 
 @Component({
   selector: 'app-navbar',
@@ -26,8 +27,9 @@ export class NavbarComponent implements OnInit {
   public selectedLanguage = 'English';
   @Output() passLanguage = new EventEmitter<any>();
 
-  constructor(translate: TranslateService) {
-    translate
+  constructor(translate: TranslateService,
+    private router: Router) {
+
   }
 
   ngOnInit(): void {
@@ -37,5 +39,15 @@ export class NavbarComponent implements OnInit {
     this.selectedLanguage = item.languageName;
     this.passLanguage.emit(item);
   }
+
+  goToPage(path) {
+    console.log(path);
+    this.router.navigate([path]);
+  }
+
+ 
+ 
+ 
+ 
 
 }

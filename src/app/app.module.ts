@@ -31,6 +31,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { GalleryComponent } from './components/pages/gallery/gallery.component';
+import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -87,7 +88,8 @@ export function createTranslateLoader(http: HttpClient) {
       defaultLanguage: 'en'
   })
   ],
-  providers: [],
+  providers: [ {provide : LocationStrategy , useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

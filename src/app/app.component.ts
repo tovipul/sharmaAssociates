@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationStart, NavigationCancel, NavigationEnd } from '@angular/router';
-import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { Location, LocationStrategy, PathLocationStrategy,HashLocationStrategy } from '@angular/common';
 import { filter } from 'rxjs/operators';
 import { TranslateService } from '@ngx-translate/core';
 declare let $: any;
@@ -13,7 +13,7 @@ declare let window: any;
     providers: [
         Location, {
             provide: LocationStrategy,
-            useClass: PathLocationStrategy
+            useClass: HashLocationStrategy
         }
     ]
 })
@@ -30,12 +30,14 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit() {
+       
         this.recallJsFuntions();
-
+               
         this.formModal = new window.bootstrap.Modal(
             document.getElementById('staticBackdrop')
-          );
-          this.formModal.show();
+        );
+        this.formModal.show();
+        console.log('11111111111111111111111111');
     }
 
     recallJsFuntions() {
@@ -48,6 +50,7 @@ export class AppComponent implements OnInit {
         this.routerSubscription = this.router.events
             .pipe(filter(event => event instanceof NavigationEnd || event instanceof NavigationCancel))
             .subscribe(event => {
+                console.log(event);
                 $.getScript('../assets/js/custom.js');
                 $('.loader').fadeOut('slow');
                 this.location = this.router.url;
@@ -64,7 +67,7 @@ export class AppComponent implements OnInit {
         this.translate.use(event.languageCode);
     }
 
-    reload(){
+    reload() {
         window.location.reload();
     }
 }
