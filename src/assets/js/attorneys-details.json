@@ -101,6 +101,36 @@
       "email":"raghav_adv@outlook.com"
     },
     {
+      "image":"assets/img/attorney-details/digvijay.jpg",
+      "employeeId":"",
+      "employeeName":"Digvijay Singh Raghav",
+      "designation":"Associate",
+      "expertise":"",
+      "linkedInUrl":"",
+      "twitterUrl":"",
+      "email":""
+    },
+    {
+      "image":"assets/img/attorney-details/nikhil_bajaj.jpg",
+      "employeeId":"",
+      "employeeName":"Nikhil Bajaj",
+      "designation":"Associate",
+      "expertise":"",
+      "linkedInUrl":"",
+      "twitterUrl":"",
+      "email":""
+    },
+    {
+      "image":"assets/img/attorney-details/rahul_jasoria.jpg",
+      "employeeId":"",
+      "employeeName":"Rahul Jasoria",
+      "designation":"Associate",
+      "expertise":"",
+      "linkedInUrl":"",
+      "twitterUrl":"",
+      "email":""
+    },
+    {
       "image":"assets/img/attorney-details/Ghanshyam.jpg",
       "employeeId":"",
       "employeeName":"Ghanshyam Sharma",
